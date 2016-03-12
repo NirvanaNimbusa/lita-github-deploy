@@ -3,7 +3,7 @@
 [![Build Status](https://travis-ci.org/lest/lita-github-deploy.png?branch=master)](https://travis-ci.org/lest/lita-github-deploy)
 [![Coverage Status](https://coveralls.io/repos/lest/lita-github-deploy/badge.png)](https://coveralls.io/r/lest/lita-github-deploy)
 
-[GitHub Flow](1) via [lita](2).
+[GitHub Flow](1) via [Lita](2).
 
 ## Installation
 

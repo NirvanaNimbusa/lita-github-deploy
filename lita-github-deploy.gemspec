@@ -3,7 +3,7 @@ Gem::Specification.new do |spec|
   spec.version       = '0.1.0'
   spec.authors       = ['Sergey Nartimov']
   spec.email         = ['just.lest@gmail.com']
-  spec.description   = 'GitHub Flow via lita.'
+  spec.summary       = 'GitHub Flow via Lita.'
   spec.license       = 'MIT'
   spec.metadata      = {'lita_plugin_type' => 'handler'}
 
