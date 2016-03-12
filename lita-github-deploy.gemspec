@@ -1,6 +1,6 @@
 Gem::Specification.new do |spec|
   spec.name          = 'lita-github-deploy'
-  spec.version       = '0.1.0'
+  spec.version       = '0.0.1'
   spec.authors       = ['Sergey Nartimov']
   spec.email         = ['just.lest@gmail.com']
   spec.summary       = 'GitHub Flow via Lita.'
