@@ -3,7 +3,7 @@
 [![Build Status](https://travis-ci.org/lest/lita-github-deploy.png?branch=master)](https://travis-ci.org/lest/lita-github-deploy)
 [![Coverage Status](https://coveralls.io/repos/lest/lita-github-deploy/badge.png)](https://coveralls.io/r/lest/lita-github-deploy)
 
-GitHub Flow via lita.
+[GitHub Flow](1) via [lita](2).
 
 ## Installation
 
@@ -20,3 +20,6 @@ TODO: Describe any configuration attributes the plugin exposes.
 ## Usage
 
 TODO: Describe the plugin's features and how to use them.
+
+[1]: https://guides.github.com/overviews/flow/
+[2]: https://www.lita.io
