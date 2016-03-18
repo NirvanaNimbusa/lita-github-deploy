@@ -21,7 +21,8 @@ module Lita
           repo = app_config.fetch(:repo)
           ref ||= app_config.fetch(:default_ref, 'master')
           env ||= app_config.fetch(:default_env, 'production')
-          create_deployment(repo, ref, env)
+          payload = build_payload(app_config)
+          create_deployment(repo, ref, env, payload)
           response.reply("deploying #{repo}##{ref} to #{env}")
         else
           response.reply("#{app} not found")
@@ -30,9 +31,13 @@ module Lita
 
       private
 
-      def create_deployment(repo, ref, env)
+      def create_deployment(repo, ref, env, payload)
         client = Octokit::Client.new(access_token: config.access_token)
-        client.create_deployment(repo, ref, environment: env)
+        client.create_deployment(repo, ref, environment: env, payload: payload)
+      end
+
+      def build_payload(app_config)
+        app_config.select { |k, _| k != :repo }
       end
 
       Lita.register_handler(self)
